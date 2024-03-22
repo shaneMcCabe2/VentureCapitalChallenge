@@ -1,0 +1,14 @@
+3-22
+
+- Claude output beautiful dataset summaries to help get me started exploring the data
+- Created MetaM and Desights profiles
+    - Desights profile had GraphQL 502 error, DMed mod for help
+- Next steps
+    - Go step by step through Claudes recommendations for exloring the datasets
+    - Begin "In-depth Analysis: Detail your analysis of each question, ensuring that the explanations of your findings are clear, 
+      compelling, and non-technical. Use analogies or simple comparisons where possible to elucidate your points."
+        - This is basically completing the "Evaluation Critera" section by section, bullet by bullet
+        - Once I have completed all of the bullet points and sections, I can go back and write the report.
+
+    
+

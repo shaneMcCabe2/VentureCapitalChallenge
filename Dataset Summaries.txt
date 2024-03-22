@@ -1,0 +1,271 @@
+Dataframe: acquisitions
+Head and Tail:
+
+The head and tail of the acquisitions dataframe show a subset of the columns, including id, acquisition_id, acquiring_object_id, acquired_object_id, term_code, price_amount, price_currency_code, acquired_at, source_url, source_description, created_at, and updated_at.
+Info:
+
+The acquisitions dataframe has 9,562 rows and 12 columns. Most columns are of object (string) data type, except for id, acquisition_id (int64), and price_amount (float64). Some columns like term_code, price_currency_code, source_url, and source_description have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id and acquisition_id columns have a range from 1 to 10,529. The price_amount column has a mean of approximately 388 million and a maximum of 2.6 trillion, indicating the presence of large acquisition amounts.
+
+To explore further:
+
+    Investigate the relationship between acquiring_object_id and acquired_object_id to understand the companies involved in acquisitions.
+    Analyze the distribution of price_amount and price_currency_code to gain insights into acquisition prices.
+    Explore the term_code column to understand the types of acquisition terms.
+    Utilize the source_url and source_description columns to gather more details about each acquisition.
+
+
+Dataframe: degrees
+Head and Tail:
+
+The head and tail of the degrees dataframe show columns such as id, object_id, degree_type, subject, institution, graduated_at, created_at, and updated_at.
+Info:
+
+The degrees dataframe has 109,610 rows and 8 columns. Most columns are of object data type, except for id (int64). Columns like degree_type, subject, institution, and graduated_at have missing values.
+Describe:
+
+The describe function only provides summary statistics for the id column, which ranges from 1 to 109,610.
+
+To explore further:
+
+    Analyze the distribution of degree_type and subject to understand the educational background of individuals.
+    Investigate the institution column to identify the most common universities or colleges.
+    Explore the graduated_at column to determine the time range of graduations.
+
+
+Dataframe: funding_rounds
+Head and Tail:
+
+The head and tail of the funding_rounds dataframe show various columns related to funding rounds, including id, funding_round_id, object_id, funded_at, funding_round_type, funding_round_code, raised_amount_usd, raised_amount, raised_currency_code, pre_money_valuation_usd, pre_money_valuation, pre_money_currency_code, post_money_valuation_usd, post_money_valuation, post_money_currency_code, participants, is_first_round, is_last_round, source_url, source_description, created_by, created_at, and updated_at.
+Info:
+
+The funding_rounds dataframe has 52,928 rows and 23 columns. Most columns are of object data type, except for id, funding_round_id, participants, is_first_round, is_last_round (int64), and raised_amount_usd, raised_amount, pre_money_valuation_usd, pre_money_valuation, post_money_valuation_usd, post_money_valuation (float64). Several columns have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id and funding_round_id columns range from 1 to 57,952. The raised_amount_usd and raised_amount columns have means in the millions, indicating significant funding amounts. The pre_money_valuation_usd, pre_money_valuation, post_money_valuation_usd, and post_money_valuation columns have means in the billions, suggesting high valuations.
+
+To explore further:
+
+    Analyze the distribution of funding_round_type and funding_round_code to understand the types of funding rounds.
+    Investigate the relationship between object_id and funding-related columns to identify companies with significant funding.
+    Explore the participants column to determine the number of investors involved in each funding round.
+    Utilize the source_url and source_description columns to gather more details about each funding round.
+
+
+Dataframe: funds
+Head and Tail:
+
+The head and tail of the funds dataframe show columns such as id, fund_id, object_id, name, funded_at, raised_amount, raised_currency_code, source_url, source_description, created_at, and updated_at.
+Info:
+
+The funds dataframe has 1,564 rows and 11 columns. Most columns are of object data type, except for id, fund_id (int64), and raised_amount (float64). Columns like funded_at, source_url, and source_description have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id and fund_id columns range from 1 to 1,701. The raised_amount column has a mean of approximately 399 million and a maximum of 89 billion, indicating the presence of large fund sizes.
+
+To explore further:
+
+    Investigate the object_id column to identify the entities associated with each fund.
+    Analyze the distribution of raised_amount and raised_currency_code to understand fund sizes and currencies.
+    Explore the name column to identify common fund names or themes.
+    Utilize the source_url and source_description columns to gather more details about each fund.
+
+
+Dataframe: investments
+Head and Tail:
+
+The head and tail of the investments dataframe show columns such as id, funding_round_id, funded_object_id, investor_object_id, created_at, and updated_at.
+Info:
+
+The investments dataframe has 80,902 rows and 6 columns. The id and funding_round_id columns are of int64 data type, while the remaining columns are of object data type. There are no missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id column ranges from 1 to 80,902, and the funding_round_id column ranges from 1 to 57,948.
+
+To explore further:
+
+    Investigate the relationship between funded_object_id and investor_object_id to identify the companies and investors involved in each investment.
+    Analyze the distribution of funding_round_id to determine the frequency of investments in each funding round.
+    Explore the temporal aspect of investments using the created_at and updated_at columns.
+
+
+Dataframe: ipos
+Head and Tail:
+
+The head and tail of the ipos dataframe show columns such as id, ipo_id, object_id, valuation_amount, valuation_currency_code, raised_amount, raised_currency_code, public_at, stock_symbol, source_url, source_description, created_at, and updated_at.
+Info:
+
+The ipos dataframe has 1,259 rows and 13 columns. Most columns are of object data type, except for id, ipo_id (int64), valuation_amount, raised_amount (float64). Columns like object_id, valuation_currency_code, raised_currency_code, public_at, source_url, and source_description have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id column ranges from 1 to 1,259, and the ipo_id column ranges from 1 to 1,376. The valuation_amount column has a mean of approximately 360 million and a maximum of 108 billion, indicating significant valuations. The raised_amount column has a mean of approximately 58 million and a maximum of 24 billion.
+
+To explore further:
+
+    Investigate the object_id column to identify the companies that underwent IPOs.
+    Analyze the distribution of valuation_amount, valuation_currency_code, raised_amount, and raised_currency_code to understand IPO valuations and amounts raised.
+    Explore the public_at column to determine the timing of IPOs.
+    Utilize the source_url and source_description columns to gather more details about each IPO.
+
+
+Dataframe: milestones
+Head and Tail:
+
+The head and tail of the milestones dataframe show columns such as id, object_id, milestone_at, milestone_code, description, source_url, source_description, created_at, and updated_at.
+Info:
+
+The milestones dataframe has 39,456 rows and 9 columns. The id column is of int64 data type, while the remaining columns are of object data type. Columns like source_url and source_description have missing values.
+Describe:
+
+The describe function provides summary statistics for the id column, which ranges from 1 to 39,456.
+
+To explore further:
+
+    Investigate the object_id column to identify the entities associated with each milestone.
+    Analyze the distribution of milestone_code to understand the types of milestones achieved.
+    Explore the description column to gain insights into the nature of each milestone.
+    Utilize the source_url and source_description columns to gather more details about each milestone.
+    Analyze the temporal aspect of milestones using the milestone_at, created_at, and updated_at columns.
+
+
+Dataframe: objects
+Head and Tail:
+
+The head and tail of the objects dataframe show a wide range of columns related to various entities, including id, entity_type, entity_id, parent_id, name, normalized_name, permalink, category_code, status, founded_at, closed_at, domain, homepage_url, twitter_username, logo_url, logo_width, logo_height, short_description, description, overview, tag_list, country_code, state_code, city, region, first_investment_at, last_investment_at, investment_rounds, invested_companies, first_funding_at, last_funding_at, funding_rounds, funding_total_usd, first_milestone_at, last_milestone_at, milestones, relationships, created_by, created_at, and updated_at.
+Info:
+
+The objects dataframe has 462,651 rows and 40 columns. Most columns are of object data type, except for entity_id, logo_width, logo_height, investment_rounds, invested_companies, funding_rounds, milestones, relationships (int64), and funding_total_usd (float64). Many columns have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The entity_id column ranges from 1 to 286,215. The logo_width and logo_height columns have means of approximately 189 and 130, respectively. The investment_rounds, invested_companies, funding_rounds, and milestones columns have relatively low means, indicating that most entities have few investments, funding rounds, and milestones. The relationships column has a mean of approximately 1.79, suggesting some level of connectivity between entities. The funding_total_usd column has a mean of approximately 892,000, indicating significant funding amounts.
+
+To explore further:
+
+    Investigate the distribution of entity_type to understand the types of entities in the dataset.
+    Analyze the category_code column to identify the industries or sectors represented.
+    Explore the status column to determine the current state of each entity (e.g., operating, acquired, closed).
+    Utilize the founded_at, closed_at, first_investment_at, last_investment_at, first_funding_at, last_funding_at, first_milestone_at, and last_milestone_at columns to analyze the temporal aspects of entities.
+    Investigate the domain, homepage_url, and twitter_username columns to gather additional information about each entity.
+    Analyze the short_description, description, and overview columns to gain insights into the nature and purpose of each entity.
+    Explore the country_code, state_code, city, and region columns to understand the geographical distribution of entities.
+    Utilize the relationships column to explore the connections and networks between entities.
+
+
+Dataframe: offices
+Head and Tail:
+
+The head and tail of the offices dataframe show columns such as id, object_id, office_id, description, region, address1, address2, city, zip_code, state_code, country_code, latitude, longitude, created_at, and updated_at.
+Info:
+
+The offices dataframe has 112,718 rows and 15 columns. The id and office_id columns are of int64 data type, while latitude, longitude, created_at, and updated_at are of float64 data type. The remaining columns are of object data type. Columns like description, address2, zip_code, state_code, created_at, and updated_at have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id column ranges from 1 to 112,718, and the office_id column ranges from 1 to 127,850. The latitude and longitude columns have means of approximately 10.90 and -16.33, respectively, suggesting a concentration of offices in the western hemisphere. The created_at and updated_at columns have no non-null values.
+
+To explore further:
+
+    Investigate the object_id column to identify the entities associated with each office.
+    Analyze the distribution of region, state_code, and country_code to understand the geographical spread of offices.
+    Explore the address1, address2, city, and zip_code columns to gain insights into the specific locations of offices.
+    Utilize the latitude and longitude columns to visualize the geographical distribution of offices on a map.
+
+
+Dataframe: people
+Head and Tail:
+
+The head and tail of the people dataframe show columns such as id, object_id, first_name, last_name, birthplace, and affiliation_name.
+Info:
+
+The people dataframe has 226,709 rows and 6 columns. The id column is of int64 data type, while the remaining columns are of object data type. Columns like first_name, last_name, birthplace, and affiliation_name have missing values.
+Describe:
+
+The describe function provides summary statistics for the id column, which ranges from 1 to 226,709.
+
+To explore further:
+
+    Analyze the distribution of first_name and last_name to identify common names or naming patterns.
+    Explore the birthplace column to understand the geographical origins of individuals.
+    Investigate the affiliation_name column to identify the organizations or institutions associated with each person.
+
+
+Dataframe: relationships
+Head and Tail:
+
+The head and tail of the relationships dataframe show columns such as id, relationship_id, person_object_id, relationship_object_id, start_at, end_at, is_past, sequence, title, created_at, and updated_at.
+Info:
+
+The relationships dataframe has 402,878 rows and 11 columns. The id, relationship_id, is_past, and sequence columns are of int64 data type, while the remaining columns are of object data type. Columns like start_at, end_at, and title have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The id and relationship_id columns range from 1 to 480,909. The is_past column has a mean of approximately 0.40, indicating that around 40% of the relationships are marked as past. The sequence column has a mean of approximately 3,021, suggesting a wide range of sequence numbers.
+
+To explore further:
+
+    Investigate the person_object_id and relationship_object_id columns to understand the connections between individuals and other entities.
+    Analyze the distribution of is_past to determine the proportion of current and past relationships.
+    Explore the title column to identify the roles or positions held by individuals in each relationship.
+    Utilize the start_at and end_at columns to analyze the duration of relationships.
+
+
+Dataframe: kaggle-data (dataset2)
+Head and Tail:
+
+The head and tail of the kaggle-data dataframe show columns such as Full Name, Primary Job Title, Bio, Gender, Number of News Articles, Number of Founded Organizations, Number of Portfolio Companies, Number of Investments_x, Number of Partner Investments, Number of Lead Investments_x, Number of Exits_x, Number of Events_x, Categories, Headquarters Location, Operating Status, Founded Date, Closed Date, Company Type, Number of Founders, Success, and Founder.
+Info:
+
+The kaggle-data dataframe has 18,361 rows and 21 columns. Most columns are of int64 data type, except for Full Name, Primary Job Title, Bio, Categories, and Headquarters Location, which are of object data type. There are no missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The Gender column has a mean of approximately 0.91, indicating a higher proportion of males. The Number of News Articles, Number of Founded Organizations, Number of Portfolio Companies, Number of Investments_x, Number of Partner Investments, Number of Lead Investments_x, Number of Exits_x, and Number of Events_x columns have relatively low means, suggesting that most individuals have limited activity in these areas. The Operating Status, Founded Date, Closed Date, Company Type, Number of Founders, Success, and Founder columns have means close to either 0 or 1, indicating binary or categorical variables.
+
+To explore further:
+
+    Analyze the distribution of Primary Job Title to understand the roles and positions held by individuals.
+    Explore the Bio column to gain insights into the background and expertise of individuals.
+    Investigate the Categories, Headquarters Location, and Company Type columns to identify the industries and locations associated with individuals and their companies.
+    Utilize the various numerical columns to assess the level of involvement and success of individuals in different areas such as investments, exits, and founded organizations.
+
+
+Dataframe: topstartups (dataset3)
+Head and Tail:
+
+The head and tail of the topstartups dataframe show a wide range of columns related to startups, including Unnamed: 0, state_code, latitude, longitude, zip_code, id, city, Unnamed: 6, name, labels, founded_at, closed_at, first_funding_at, last_funding_at, age_first_funding_year, age_last_funding_year, age_first_milestone_year, age_last_milestone_year, relationships, funding_rounds, funding_total_usd, milestones, state_code.1, is_CA, is_NY, is_MA, is_TX, is_otherstate, category_code, is_software, is_web, is_mobile, is_enterprise, is_advertising, is_gamesvideo, is_ecommerce, is_biotech, is_consulting, is_othercategory, object_id, has_VC, has_angel, has_roundA, has_roundB, has_roundC, has_roundD, avg_participants, is_top500, and status.
+Info:
+
+The topstartups dataframe has 923 rows and 49 columns. Most columns are of object data type, except for Unnamed: 0, labels, relationships, funding_rounds, funding_total_usd, milestones, is_CA, is_NY, is_MA, is_TX, is_otherstate, is_software, is_web, is_mobile, is_enterprise, is_advertising, is_gamesvideo, is_ecommerce, is_biotech, is_consulting, is_othercategory, has_VC, has_angel, has_roundA, has_roundB, has_roundC, has_roundD, is_top500 (int64), and latitude, longitude, age_first_funding_year, age_last_funding_year, age_first_milestone_year, age_last_milestone_year, avg_participants (float64). Some columns like Unnamed: 6, closed_at, state_code.1, created_at, and updated_at have missing values.
+Describe:
+
+The describe function provides summary statistics for numerical columns. The Unnamed: 0 column ranges from 1 to 1,153. The labels column has a mean of approximately 0.65, indicating a mix of labeled and unlabeled startups. The age_first_funding_year and age_last_funding_year columns have means of approximately 2.24 and 3.93, respectively, suggesting a relatively short time between first and last funding. The age_first_milestone_year and age_last_milestone_year columns have similar means. The relationships, funding_rounds, funding_total_usd, and milestones columns have means indicating some level of activity in these areas. The is_CA, is_NY, is_MA, is_TX, is_otherstate, is_software, is_web, is_mobile, is_enterprise, is_advertising, is_gamesvideo, is_ecommerce, is_biotech, is_consulting, is_othercategory, has_VC, has_angel, has_roundA, has_roundB, has_roundC, has_roundD, and is_top500 columns have means close to either 0 or 1, indicating binary variables.
+
+To explore further:
+
+    Investigate the name, category_code, and status columns to understand the types of startups and their current status.
+    Analyze the geographical distribution of startups using the state_code, latitude, longitude, zip_code, and city columns.
+    Explore the temporal aspects of startups using the founded_at, closed_at, first_funding_at, and last_funding_at columns.
+    Utilize the various binary columns (is_CA, is_NY, etc.) to identify patterns and characteristics of startups based on their location and industry.
+    Investigate the funding-related columns (funding_rounds, funding_total_usd, has_VC, has_angel, etc.) to assess the funding landscape of startups.
+
+
+
+Dataframe: crunchbase-companies (dataset4)
+Head and Tail:
+
+The head and tail of the crunchbase-companies dataframe show columns such as permalink, name, homepage_url, category_list, funding_total_usd, status, country_code, state_code, region, city, funding_rounds, founded_at, first_funding_at, and last_funding_at.
+Info:
+
+The crunchbase-companies dataframe has 66,368 rows and 14 columns. All columns are of object data type, except for funding_rounds, which is of int64 data type. Some columns like name, homepage_url, category_list, country_code, state_code, region, city, and founded_at have missing values.
+Describe:
+
+The describe function provides summary statistics for the funding_rounds column, which has a mean of approximately 1.73, indicating that companies have undergone an average of 1 to 2 funding rounds. The maximum number of funding rounds is 19.
+
+To explore further:
+
+    Analyze the distribution of status to understand the current state of companies (e.g., operating, acquired, closed).
+    Investigate the category_list column to identify the industries or sectors represented by the companies.
+    Explore the geographical distribution of companies using the country_code, state_code, region, and city columns.
+    Utilize the funding_total_usd and funding_rounds columns to assess the funding landscape of companies.
+    Analyze the temporal aspects of companies using the founded_at, first_funding_at, and last_funding_at columns.
+
+
